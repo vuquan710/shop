@@ -84,7 +84,7 @@
                                     <a href="category.php">List Category</a>
                                 </li>
                                 <li>
-                                    <a href="#">Add Category</a>
+                                    <a href="addCate.php">Add Category</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -96,7 +96,7 @@
                                     <a href="product.php">List Product</a>
                                 </li>
                                 <li>
-                                    <a href="#">Add Product</a>
+                                    <a href="addProduct.php">Add Product</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

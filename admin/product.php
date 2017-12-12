@@ -3,7 +3,6 @@ include 'view/layouts/header.php';
 require 'model/dbCon.php';
 $sql = "SELECT * FROM Products";
 $req = mysqli_query($conn, $sql);
-
 ?>
         <div id="page-wrapper">
             <div class="container-fluid">
