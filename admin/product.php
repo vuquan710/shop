@@ -3,6 +3,7 @@ include 'view/layouts/header.php';
 require 'model/dbCon.php';
 $sql = "SELECT * FROM Products";
 $req = mysqli_query($conn, $sql);
+$id=1;
 ?>
         <div id="page-wrapper">
             <div class="container-fluid">
@@ -25,7 +26,7 @@ $req = mysqli_query($conn, $sql);
                         <tbody>
                         <?php while ($row = mysqli_fetch_assoc($req)) { ?>
                             <tr class="odd gradeX" align="center">
-                                <td><?= $row['id']?></td>
+                                <td><?=$id++?></td>
                                 <td><?= $row['product_name']?></td>
                                 <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a onclick="return confirm (' Có muốn xóa k?')" href="deleteProduct.php?id=<?=$row['id']?>"> Delete</a></td>
                                 <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="editProduct.php?id=<?=$row['id']?>">Edit</a></td>
